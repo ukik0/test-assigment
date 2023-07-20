@@ -5,8 +5,8 @@
 @import './fonts';
 
 // Sections or Pages SCSS-files imports
-@import './header';
-@import './footer';
+@import 'components/header';
+@import 'components/footer';
 
 // Libs
 // @import './libs/swiper';
