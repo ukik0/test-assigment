@@ -26,7 +26,6 @@ html,
 body {
     background: $text-white-color;
     font-family: $fontMain;
-    height: 100vh;
 
     &.locked {
         overflow: hidden;
