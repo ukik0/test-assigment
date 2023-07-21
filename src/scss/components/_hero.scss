@@ -3,6 +3,11 @@
 .hero {
     position: relative;
     overflow: hidden;
+    margin-bottom: 164px;
+
+    @include tablet{
+        margin-bottom: 120px;
+    }
 
     &::after {
         @include pseudo {
@@ -23,7 +28,7 @@
             display: block;
             max-width: 100%;
             bottom: 0;
-            height: 165px;
+            height: 196px;
             top: 593px;
         }
     }
@@ -160,6 +165,7 @@
     &-proposal {
         z-index: 5;
         margin-top: 140px;
+        margin-bottom: 37px;
 
         @include mobile {
             margin-top: 0;
@@ -180,6 +186,7 @@
             @include mobile {
                 margin-top: 59px;
                 margin-bottom: 0;
+                line-height: 130%;
             }
         }
     }
