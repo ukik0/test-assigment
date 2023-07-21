@@ -1,6 +1,12 @@
 @import '../mixins';
 
 .catalog {
+    margin-bottom: 180px;
+
+    @include mobile {
+        margin-bottom: 120px;
+    }
+
     &-content {
         display: flex;
         align-items: flex-start;
@@ -63,6 +69,19 @@
             }
         }
 
+        &:not(:nth-child(2)) {
+            @include mobile {
+                .catalog-item-link {
+                    display: block;
+                    margin-top: 14px;
+                }
+
+                .catalog-item-count {
+                    transform: translateY(11px);
+                }
+            }
+        }
+
         &:nth-child(even) {
             background: $bg-primary;
         }
@@ -93,7 +112,7 @@
         }
 
         &-count {
-            margin-bottom: 5px;
+            margin-bottom: 2px;
 
             @include mobile {
                 margin-bottom: 0;

@@ -1,0 +1,243 @@
+@import '../mixins';
+
+.benefits {
+    margin-bottom: 172px;
+    padding: 87px 0 46px 0;
+
+    @include mobile {
+        margin-bottom: 120px;
+    }
+
+    &-heading {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 105px;
+
+        @include tablet {
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @include mobile {
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: start;
+            margin-bottom: -34px;
+            overflow: hidden;
+        }
+    }
+
+    &-info {
+        @include tablet {
+            justify-content: center;
+        }
+
+        @include mobile {
+            justify-content: flex-start;
+        }
+    }
+
+    &-banner {
+        max-width: 775px;
+        width: 100%;
+        margin-left: -80px;
+        transform: scale(1.15) translate(39px, 26px);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @include tablet {
+            transform: scale(1) translate(0, 0);
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            transform: translate(61px, -73px);
+        }
+    }
+
+    &-title {
+        margin-bottom: 37px;
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+
+    &-description {
+        margin-bottom: 41px;
+
+        @include mobile {
+            max-width: 336px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 150%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-text {
+        margin-top: 24px;
+
+        @include mobile {
+            margin-top: 19px;
+        }
+    }
+
+    &-list {
+        display: flex;
+        align-items: flex-start;
+        gap: 27px;
+
+        @include desktop {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include mobile {
+            gap: 20px;
+        }
+    }
+
+    &-item {
+        background: $text-primary-color;
+        padding: 30px 23px 35px 30px;
+        border-radius: 18px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex: 0 1 330px;
+        position: relative;
+
+        &::after{
+            @include pseudo{
+                background: url("../../img/benefits-item-decor.svg") no-repeat center;
+                background-size: cover;
+                max-width: 140px;
+                width: 100%;
+                height: 90px;
+                top: 0;
+                right: 0;
+                z-index: 1;
+
+                @include mobile{
+                    max-width: 121px;
+                    height: 80px;
+                    top: -10px;
+                }
+            }
+        }
+
+        @include desktop {
+            flex: 1 1 450px;
+            min-height: 270px;
+        }
+
+        @include mobile {
+            padding: 15px;
+            border-radius: 10px;
+            min-height: initial;
+
+            &:nth-child(1) {
+                .benefits-item-title {
+                    strong {
+                        display: none;
+                    }
+
+                    &::after {
+                        content: 'У нас самые выгодные и низкие цены';
+                        display: block;
+                        max-width: 211px;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .benefits-item-title {
+                    strong {
+                        display: none;
+                    }
+
+                    &::after {
+                        content: 'Мы являемся официальным партнером DELL';
+                    }
+                }
+
+                .benefits-item-description {
+                    strong {
+                        display: none;
+                    }
+
+                    &::after {
+                        content: 'Мы лучший официальный поставщик продукции DELL в России и странах СНГ';
+                    }
+                }
+            }
+        }
+
+        &-icon {
+            background: $text-outer-color;
+            border-radius: 18px;
+            margin-bottom: 25px;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 36px;
+                height: 36px;
+            }
+
+            @include mobile {
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+
+                svg {
+                    width: 31px;
+                    height: 31px;
+                }
+            }
+        }
+
+        &-title {
+            color: $text-white-color;
+            font-family: Exuid;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 13px;
+
+            @include mobile {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+
+            > * {
+                @extend .benefits-item-title;
+
+                @include mobile {
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &-description {
+            color: $text-nobel-color;
+            font-family: Exuid;
+            font-size: 16px;
+            font-weight: 300;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+}
