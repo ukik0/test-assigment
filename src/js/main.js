@@ -7,6 +7,12 @@ const swiper = new Swiper('.swiper', {
     },
     slidesPerView: 1,
     loop: true,
+    centeredSlides: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    parallax: true,
 
     pagination: {
         el: '.swiper-pagination'
@@ -16,7 +22,6 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next'
     },
 
-    // Responsive breakpoints
     breakpoints: {
         320: {
             slidesPerView: 1,
