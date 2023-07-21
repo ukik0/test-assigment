@@ -11,6 +11,10 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
             rel="stylesheet"
         />
+        <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="./css/style.min.css" />
     </head>
 
@@ -19,12 +23,13 @@
         @@include('./html/_header.html')
         <!-- Main Page -->
         <main>
-            <div class="container">asd</div>
+            @@include('./html/_hero.html')
         </main>
 
         <!-- Footer -->
-        @@include('./html/_footer.html')
+<!--        @@include('./html/_footer.html')-->
     </body>
 
-    <script src="./js/scripts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/scripts.min.js" type="module"></script>
 </html>
