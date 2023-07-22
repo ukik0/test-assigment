@@ -124,3 +124,18 @@ const dropdownMenu = () => {
 };
 
 dropdownMenu();
+
+const changeMonth = () => {
+    const items = document.querySelectorAll('.news-item-date span');
+
+    const MOBILE_BREAKPOINT = 476;
+
+    if (!window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`).matches) return;
+
+    items.forEach((item) => {
+        const text = item.textContent;
+        item.textContent = text?.slice(0, 3);
+    });
+};
+
+changeMonth();

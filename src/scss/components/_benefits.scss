@@ -6,6 +6,7 @@
 
     @include mobile {
         margin-bottom: 120px;
+        padding-bottom: 125px;
     }
 
     &-content {
@@ -98,11 +99,12 @@
         }
 
         @include mobile {
-            transform: translate(63px,-57px);
+            transform: translate(63px, -57px);
         }
     }
 
     &-title {
+        display: block;
         margin-bottom: 37px;
 
         @include mobile {

@@ -17,6 +17,7 @@
     }
 
     &-title {
+        display: block;
         margin-bottom: 29px;
 
         @include mobile {
