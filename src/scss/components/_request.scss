@@ -1,0 +1,233 @@
+@import '../mixins';
+
+.request {
+    &-content {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        &::after {
+            @include pseudo {
+                background: url('../../img/request-form-bg.svg') no-repeat center;
+                background-size: cover;
+                width: 278px;
+                height: 588px;
+                left: 45.5%;
+                top: 146px;
+                transform: translateX(-50%);
+
+                @include desktop {
+                    transform: scale(0.8);
+                    left: 30%;
+                    top: 234px;
+                }
+
+                @include tablet {
+                    right: -20px;
+                    left: auto;
+                    top: 268px;
+                    transform: rotate(5deg) scale(0.7);
+                }
+            }
+        }
+    }
+
+    &-left {
+        flex: 1 1 700px;
+        border-radius: 20px 0 0 20px;
+        padding: 100px 127px 111px 100px;
+
+        @include desktop {
+            padding: 75px;
+        }
+
+        @include tablet {
+            width: 100%;
+            flex: 1 1 100%;
+        }
+
+        @include small-tablet {
+            padding: 101px 0 60px 30px;
+        }
+
+        &-title {
+            display: block;
+            margin-bottom: 18px;
+            line-height: 50px;
+        }
+
+        &-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            margin-bottom: 48px;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 17px;
+
+            &:nth-child(1) {
+                margin-bottom: 44px;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 72px;
+            }
+
+            &-icon {
+                width: 38px;
+                height: 38px;
+            }
+
+            &-text {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+                span {
+                    color: $text-gray-color;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 133.687%;
+                    margin-bottom: 8px;
+                    margin-top: 5px;
+                }
+
+                > * {
+                    color: $text-gray-color;
+                    font-size: 22px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    font-style: normal;
+                }
+            }
+        }
+
+        &-social-list {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+    }
+
+    &-right {
+        border-radius: 0 20px 20px 0;
+        background: $text-primary-color;
+        flex: 1 1 700px;
+        padding: 100px 129px 103px 129px;
+
+        @include desktop {
+            padding: 75px;
+            padding-bottom: 103px;
+        }
+
+        @include tablet {
+            width: 100%;
+            flex: 1 1 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include small-tablet {
+            padding: 60px 30px;
+        }
+
+        &-title {
+            @extend .request-left-title;
+
+            color: $text-white-color;
+        }
+
+        &-subtitle {
+            @extend .request-left-subtitle;
+
+            color: $text-white-color;
+            margin-bottom: 65px;
+        }
+
+        &-form {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 54px;
+            max-width: 434px;
+            width: 100%;
+
+            @include tablet {
+                max-width: 100%;
+            }
+
+            &-item {
+                position: relative;
+                width: 100%;
+
+                label {
+                    position: absolute;
+                    left: 12px;
+                    top: -10px;
+                    color: $bg-primary;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 133.687%;
+                    padding: 0 12px;
+                    background: $text-primary-color;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    outline: none;
+                    background: transparent;
+                    height: 59px;
+                    border: 1.5px solid rgba(242, 242, 242, 0.5);
+                    border-radius: 18px;
+                    padding: 0 25px;
+                    color: #f2f2f2;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 133.687%;
+                    transition: 0.1s all ease-in-out;
+
+                    &:hover,
+                    :focus {
+                        border: 2px solid $bg-dodger;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                    height: 145px;
+                }
+            }
+
+            &-info {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                button[type='submit'] {
+                    @extend .hero-info-link !optional;
+
+                    background: transparent;
+                    color: $text-white-color;
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
