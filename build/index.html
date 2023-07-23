@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test-assignment</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+    </head>
+
+    <body class="main__body">
+        <!-- Header -->
+        <header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="#" class="header-logo">
+                <img src="../img/logo.svg" alt="logo" />
+            </a>
+
+            <div class="header-left">
+                <nav class="header-nav">
+                    <div class="overlay">
+                        <ul class="header-nav-list menu">
+                            <li class="header-nav-item">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#">Каталог</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#">Новости</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#">Наш АСЦ</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <a href="#" class="header-search">
+                    <img src="../img/search-icon.svg" alt="search-icon" />
+                </a>
+
+                <div class="header-right-menu-wrapper">
+                    <ul class="header-right-menu">
+                        <li data-nav="products" class="dropdown-link header-right-item">
+                            <a href="#">
+                                <svg
+                                    width="21"
+                                    height="23"
+                                    viewBox="0 0 21 23"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M20.2232 21.8578V19.6184C20.2232 18.4306 19.7338 17.2914 18.8628 16.4515C17.9918 15.6115 16.8104 15.1396 15.5785 15.1396H6.2892C5.05736 15.1396 3.87597 15.6115 3.00492 16.4515C2.13388 17.2914 1.64453 18.4306 1.64453 19.6184V21.8578"
+                                        stroke="#292D32"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M10.9337 10.6607C13.4989 10.6607 15.5784 8.65548 15.5784 6.18191C15.5784 3.70835 13.4989 1.70312 10.9337 1.70312C8.36855 1.70312 6.28906 3.70835 6.28906 6.18191C6.28906 8.65548 8.36855 10.6607 10.9337 10.6607Z"
+                                        stroke="#292D32"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li data-nav="developers" class="dropdown-link header-right-item --mobile-cleared">
+                            <a href="#">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_4009_193)">
+                                        <g clip-path="url(#clip1_4009_193)">
+                                            <path
+                                                d="M9.94939 6.94939C10.4932 6.40553 11.2309 6.1 12 6.1C12.7691 6.1 13.5068 6.40553 14.0506 6.94939C14.5945 7.49325 14.9 8.23087 14.9 9V21C14.9 21.7691 14.5945 22.5068 14.0506 23.0506C13.5068 23.5945 12.7691 23.9 12 23.9C11.2309 23.9 10.4932 23.5945 9.94939 23.0506C9.40553 22.5068 9.1 21.7691 9.1 21V9C9.1 8.23087 9.40553 7.49325 9.94939 6.94939ZM12.7778 21.7778C12.9841 21.5715 13.1 21.2917 13.1 21V9C13.1 8.70826 12.9841 8.42847 12.7778 8.22218C12.5715 8.01589 12.2917 7.9 12 7.9C11.7083 7.9 11.4285 8.01589 11.2222 8.22218C11.0159 8.42847 10.9 8.70826 10.9 9V21C10.9 21.2917 11.0159 21.5715 11.2222 21.7778C11.4285 21.9841 11.7083 22.1 12 22.1C12.2917 22.1 12.5715 21.9841 12.7778 21.7778Z"
+                                                fill="#292D32"
+                                                stroke="#FAFAFA"
+                                                stroke-width="0.2"
+                                            />
+                                            <path
+                                                d="M18.9494 0.94939C19.4932 0.405535 20.2309 0.1 21 0.1C21.7691 0.1 22.5068 0.405535 23.0506 0.94939C23.5945 1.49325 23.9 2.23087 23.9 3V21C23.9 21.7691 23.5945 22.5068 23.0506 23.0506C22.5068 23.5945 21.7691 23.9 21 23.9C20.2309 23.9 19.4932 23.5945 18.9494 23.0506C18.4055 22.5068 18.1 21.7691 18.1 21V3C18.1 2.23087 18.4055 1.49325 18.9494 0.94939ZM21.7778 21.7778C21.9841 21.5715 22.1 21.2917 22.1 21V3C22.1 2.70826 21.9841 2.42847 21.7778 2.22218C21.5715 2.01589 21.2917 1.9 21 1.9C20.7083 1.9 20.4285 2.01589 20.2222 2.22218C20.0159 2.42847 19.9 2.70826 19.9 3V21C19.9 21.2917 20.0159 21.5715 20.2222 21.7778C20.4285 21.9841 20.7083 22.1 21 22.1C21.2917 22.1 21.5715 21.9841 21.7778 21.7778Z"
+                                                fill="#292D32"
+                                                stroke="#FAFAFA"
+                                                stroke-width="0.2"
+                                            />
+                                            <rect
+                                                x="0.75"
+                                                y="12.75"
+                                                width="4.5"
+                                                height="10.5"
+                                                rx="2.25"
+                                                stroke="#292D32"
+                                                stroke-width="1.5"
+                                            />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4009_193">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                        <clipPath id="clip1_4009_193">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li data-nav="company" class="dropdown-link header-right-item --mobile-cleared">
+                            <a href="#">
+                                <svg
+                                    width="24"
+                                    height="23"
+                                    viewBox="0 0 24 23"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M17.5 0.916992C16.374 0.934507 15.2725 1.24885 14.3068 1.82826C13.3411 2.40768 12.5454 3.23166 12 4.21699C11.4546 3.23166 10.6589 2.40768 9.69324 1.82826C8.72754 1.24885 7.62605 0.934507 6.5 0.916992C4.70494 0.994983 3.01371 1.78025 1.79579 3.10122C0.577864 4.4222 -0.0677465 6.17152 4.06709e-06 7.96699C4.06709e-06 12.514 4.786 17.48 8.8 20.847C9.69622 21.6001 10.8294 22.013 12 22.013C13.1706 22.013 14.3038 21.6001 15.2 20.847C19.214 17.48 24 12.514 24 7.96699C24.0678 6.17152 23.4221 4.4222 22.2042 3.10122C20.9863 1.78025 19.2951 0.994983 17.5 0.916992ZM13.915 19.317C13.379 19.7684 12.7008 20.0159 12 20.0159C11.2993 20.0159 10.621 19.7684 10.085 19.317C4.947 15.006 2 10.87 2 7.96699C1.93164 6.70171 2.36637 5.46072 3.20937 4.51469C4.05236 3.56866 5.23524 2.99434 6.5 2.91699C7.76477 2.99434 8.94764 3.56866 9.79064 4.51469C10.6336 5.46072 11.0684 6.70171 11 7.96699C11 8.23221 11.1054 8.48656 11.2929 8.6741C11.4804 8.86164 11.7348 8.96699 12 8.96699C12.2652 8.96699 12.5196 8.86164 12.7071 8.6741C12.8946 8.48656 13 8.23221 13 7.96699C12.9316 6.70171 13.3664 5.46072 14.2094 4.51469C15.0524 3.56866 16.2352 2.99434 17.5 2.91699C18.7648 2.99434 19.9476 3.56866 20.7906 4.51469C21.6336 5.46072 22.0684 6.70171 22 7.96699C22 10.87 19.053 15.006 13.915 19.313V19.317Z"
+                                        fill="#292D32"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header-right-item">
+                            <a href="#">
+                                <svg
+                                    width="22"
+                                    height="24"
+                                    viewBox="0 0 22 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M16.1158 7.69568V5.55802C16.1158 4.8919 15.9846 4.2323 15.7297 3.61689C15.4748 3.00147 15.1011 2.44229 14.6301 1.97127C14.1591 1.50026 13.5999 1.12662 12.9845 0.871711C12.3691 0.616798 11.7095 0.485596 11.0434 0.485596C10.3773 0.485596 9.71766 0.616798 9.10224 0.871711C8.48683 1.12662 7.92765 1.50026 7.45663 1.97127C6.98561 2.44229 6.61198 3.00147 6.35707 3.61689C6.10215 4.2323 5.97095 4.8919 5.97095 5.55802V10.6304C5.97095 10.8226 6.0473 11.0069 6.18319 11.1428C6.31909 11.2787 6.5034 11.3551 6.69558 11.3551C6.88777 11.3551 7.07208 11.2787 7.20798 11.1428C7.34387 11.0069 7.42022 10.8226 7.42022 10.6304V9.14494H13.2173V7.69568H7.42022V5.55802C7.42022 4.5971 7.80194 3.67553 8.48141 2.99606C9.16089 2.31658 10.0825 1.93486 11.0434 1.93486C12.0043 1.93486 12.9259 2.31658 13.6053 2.99606C14.2848 3.67553 14.6665 4.5971 14.6665 5.55802V10.5942C14.6665 10.7864 14.7429 10.9707 14.8788 11.1066C15.0147 11.2425 15.199 11.3188 15.3912 11.3188C15.5833 11.3188 15.7677 11.2425 15.9036 11.1066C16.0395 10.9707 16.1158 10.7864 16.1158 10.5942V9.14494H19.739V22.1883H2.34779V9.14494H4.52169V7.69568H0.898529V22.2535C0.898529 22.6206 1.04435 22.9726 1.30391 23.2322C1.56347 23.4918 1.9155 23.6376 2.28258 23.6376H19.8042C20.1712 23.6376 20.5233 23.4918 20.7828 23.2322C21.0424 22.9726 21.1882 22.6206 21.1882 22.2535V7.69568H16.1158Z"
+                                        fill="#292D32"
+                                    />
+                                </svg>
+                            </a>
+
+                            <span class="header-right-item-counter">3</span>
+                        </li>
+                        <div class="burger">
+                            <span></span>
+                        </div>
+                    </ul>
+                    <div class="popover">
+                        <div class="content">
+                            <section class="section section-products">
+                                <div class="header-dropdown">
+                                    <div class="header-dropdown-heading">
+                                        <div class="header-dropdown-user">
+                                            <div class="header-dropdown-icon">
+                                                <svg
+                                                    width="21"
+                                                    height="23"
+                                                    viewBox="0 0 21 23"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M20.2232 21.8578V19.6184C20.2232 18.4306 19.7338 17.2914 18.8628 16.4515C17.9918 15.6115 16.8104 15.1396 15.5785 15.1396H6.2892C5.05736 15.1396 3.87597 15.6115 3.00492 16.4515C2.13388 17.2914 1.64453 18.4306 1.64453 19.6184V21.8578"
+                                                        stroke="#292D32"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M10.9337 10.6607C13.4989 10.6607 15.5784 8.65548 15.5784 6.18191C15.5784 3.70835 13.4989 1.70312 10.9337 1.70312C8.36855 1.70312 6.28906 3.70835 6.28906 6.18191C6.28906 8.65548 8.36855 10.6607 10.9337 10.6607Z"
+                                                        stroke="#292D32"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <span> Мария </span>
+                                    </div>
+
+                                    <ul class="header-dropdown-list">
+                                        <li class="header-dropdown-item">
+                                            <a href="#"> Личный кабинет </a>
+                                        </li>
+                                        <li class="header-dropdown-item">
+                                            <a href="#"> История заказов </a>
+                                        </li>
+                                        <li class="header-dropdown-item">
+                                            <a href="#"> Персональные предложения </a>
+                                        </li>
+                                        <li class="header-dropdown-item">
+                                            <a href="#"> Выйти </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <!--                            <section class="section section-developers">-->
+                            <!--                                <div class="header-dropdown">-->
+                            <!--                                    <div class="header-dropdown-heading">-->
+                            <!--                                        <div class="header-dropdown-user">-->
+                            <!--                                            <div>-->
+                            <!--                                                <svg-->
+                            <!--                                                    width="21"-->
+                            <!--                                                    height="23"-->
+                            <!--                                                    viewBox="0 0 21 23"-->
+                            <!--                                                    fill="none"-->
+                            <!--                                                    xmlns="http://www.w3.org/2000/svg"-->
+                            <!--                                                >-->
+                            <!--                                                    <path-->
+                            <!--                                                        d="M20.2232 21.8578V19.6184C20.2232 18.4306 19.7338 17.2914 18.8628 16.4515C17.9918 15.6115 16.8104 15.1396 15.5785 15.1396H6.2892C5.05736 15.1396 3.87597 15.6115 3.00492 16.4515C2.13388 17.2914 1.64453 18.4306 1.64453 19.6184V21.8578"-->
+                            <!--                                                        stroke="#292D32"-->
+                            <!--                                                        stroke-width="1.5"-->
+                            <!--                                                        stroke-linecap="round"-->
+                            <!--                                                        stroke-linejoin="round"-->
+                            <!--                                                    />-->
+                            <!--                                                    <path-->
+                            <!--                                                        d="M10.9337 10.6607C13.4989 10.6607 15.5784 8.65548 15.5784 6.18191C15.5784 3.70835 13.4989 1.70312 10.9337 1.70312C8.36855 1.70312 6.28906 3.70835 6.28906 6.18191C6.28906 8.65548 8.36855 10.6607 10.9337 10.6607Z"-->
+                            <!--                                                        stroke="#292D32"-->
+                            <!--                                                        stroke-width="1.5"-->
+                            <!--                                                        stroke-linecap="round"-->
+                            <!--                                                        stroke-linejoin="round"-->
+                            <!--                                                    />-->
+                            <!--                                                </svg>-->
+                            <!--                                            </div>-->
+                            <!--                                        </div>-->
+
+                            <!--                                        <span> Мария </span>-->
+                            <!--                                    </div>-->
+
+                            <!--                                    <ul class="header-dropdown-list">-->
+                            <!--                                        <li class="header-dropdown-item">-->
+                            <!--                                            <a href="#"> Личный кабинет </a>-->
+                            <!--                                        </li>-->
+                            <!--                                        <li class="header-dropdown-item">-->
+                            <!--                                            <a href="#"> История заказов </a>-->
+                            <!--                                        </li>-->
+                            <!--                                        <li class="header-dropdown-item">-->
+                            <!--                                            <a href="#"> Персональные предложения </a>-->
+                            <!--                                        </li>-->
+                            <!--                                        <li class="header-dropdown-item">-->
+                            <!--                                            <a href="#"> Выйти </a>-->
+                            <!--                                        </li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </section>-->
+
+                            <!--                            <section class="section section-company">-->
+                            <!--                                <div class="header-dropdown">-->
+                            <!--                                    <div class="header-dropdown-heading">-->
+                            <!--                                        <div class="header-dropdown-user">-->
+                            <!--                                            <div>-->
+                            <!--                                                <svg-->
+                            <!--                                                    width="21"-->
+                            <!--                                                    height="23"-->
+                            <!--                                                    viewBox="0 0 21 23"-->
+                            <!--                                                    fill="none"-->
+                            <!--                                                    xmlns="http://www.w3.org/2000/svg"-->
+                            <!--                                                >-->
+                            <!--                                                    <path-->
+                            <!--                                                        d="M20.2232 21.8578V19.6184C20.2232 18.4306 19.7338 17.2914 18.8628 16.4515C17.9918 15.6115 16.8104 15.1396 15.5785 15.1396H6.2892C5.05736 15.1396 3.87597 15.6115 3.00492 16.4515C2.13388 17.2914 1.64453 18.4306 1.64453 19.6184V21.8578"-->
+                            <!--                                                        stroke="#292D32"-->
+                            <!--                                                        stroke-width="1.5"-->
+                            <!--                                                        stroke-linecap="round"-->
+                            <!--                                                        stroke-linejoin="round"-->
+                            <!--                                                    />-->
+                            <!--                                                    <path-->
+                            <!--                                                        d="M10.9337 10.6607C13.4989 10.6607 15.5784 8.65548 15.5784 6.18191C15.5784 3.70835 13.4989 1.70312 10.9337 1.70312C8.36855 1.70312 6.28906 3.70835 6.28906 6.18191C6.28906 8.65548 8.36855 10.6607 10.9337 10.6607Z"-->
+                            <!--                                                        stroke="#292D32"-->
+                            <!--                                                        stroke-width="1.5"-->
+                            <!--                                                        stroke-linecap="round"-->
+                            <!--                                                        stroke-linejoin="round"-->
+                            <!--                                                    />-->
+                            <!--                                                </svg>-->
+                            <!--                                            </div>-->
+                            <!--                                        </div>-->
+
+                            <!--                                        <span> Мария </span>-->
+                            <!--                                    </div>-->
+
+                            <!--                                    <ul class="header-dropdown-list">-->
+                            <!--                                        <li class="header-dropdown-item">-->
+                            <!--                                            <a href="#"> Личный кабинет </a>-->
+                            <!--                                        </li>-->
+                            <!--                                        <li class="header-dropdown-item">-->
+                            <!--                                            <a href="#"> История заказов </a>-->
+                            <!--                                        </li>-->
+                            <!--                                        <li class="header-dropdown-item">-->
+                            <!--                                            <a href="#"> Персональные предложения </a>-->
+                            <!--                                        </li>-->
+                            <!--                                        <li class="header-dropdown-item">-->
+                            <!--                                            <a href="#"> Выйти </a>-->
+                            <!--                                        </li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </section>-->
+                        </div>
+                        <div class="background"></div>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <!-- Main Page -->
+        <main>
+            <section class="hero --bg-primary">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-swiper-wrapper">
+                <div class="hero-text-wrapper">
+                    <div class="hero-text-scroll">
+                        <span> Scroll to catalog </span>
+
+                        <svg
+                            width="25"
+                            height="39"
+                            viewBox="0 0 25 39"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M23 13V26.5C23 32.299 18.299 37 12.5 37C6.70101 37 2 32.299 2 26.5V13C2 7.20101 6.70101 2.5 12.5 2.5C18.299 2.5 23 7.20101 23 13ZM0 13C0 6.09644 5.59644 0.5 12.5 0.5C19.4036 0.5 25 6.09644 25 13V26.5C25 33.4036 19.4036 39 12.5 39C5.59644 39 0 33.4036 0 26.5V13ZM11.5 20.5V29.5L13.5 29.5V20.5H11.5Z"
+                                fill="#33A9FF"
+                            />
+                        </svg>
+                    </div>
+
+                    <div class="hero-text-main">
+                        <span class="hero-subtitle --text-subtitle"> Новое поступление </span>
+
+                        <strong class="hero-title --section-title">Лучшие товары от&nbsp;компании Dell</strong>
+
+                        <div class="hero-info">
+                            <a href="#" class="--arrow-btn"></a>
+                            <a href="#" class="hero-info-link --section-info-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/hero-banner.png" class="hero-swiper-banner" alt="banner" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/catalog-1.png" class="hero-swiper-banner" alt="banner" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/hero-banner.png" class="hero-swiper-banner" alt="banner" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/hero-banner.png" class="hero-swiper-banner" alt="banner" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/hero-banner.png" class="hero-swiper-banner" alt="banner" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <aside class="hero-proposal">
+                <span class="--text">
+                    Выгодное <br />
+                    предложение <br />от&nbsp;Dell
+                </span>
+                <div class="swiper-button-next"></div>
+            </aside>
+        </div>
+    </div>
+</section>
+ <section class="catalog">
+    <div class="container">
+        <div class="catalog-content">
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <strong class="catalog-title --section-title">Каталог товаров от&nbsp;Dell</strong>
+
+                    <p class="catalog-description --text-subtitle">
+                        Наша компания является зарегистрированным и&nbsp;официальным партнером Dell
+                        в&nbsp;России.
+                    </p>
+
+                    <div class="catalog-info hero-info">
+                        <a href="#" class="--arrow-btn"></a>
+                        <a href="#" class="hero-info-link --section-info-link">В каталог</a>
+                    </div>
+                </li>
+
+                <li class="catalog-item">
+                    <span class="catalog-item-counter">01</span>
+
+                    <div class="catalog-image --catalog-image-1"></div>
+
+                    <p class="catalog-item-count --text-subtitle">105 товаров</p>
+
+                    <a href="#" class="catalog-item-link --text">Ноутбуки</a>
+                </li>
+
+                <li class="catalog-item">
+                    <span class="catalog-item-counter">02</span>
+
+                    <div class="catalog-image --catalog-image-2"></div>
+
+                    <p class="catalog-item-count --text-subtitle">65 товаров</p>
+
+                    <a href="#" class="catalog-item-link --text">Персональные компьютеры</a>
+                </li>
+
+                <li class="catalog-item">
+                    <span class="catalog-item-counter">03</span>
+
+                    <div class="catalog-image --catalog-image-3"></div>
+
+                    <p class="catalog-item-count --text-subtitle">13 товаров</p>
+
+                    <a href="#" class="catalog-item-link --text">Cерверы</a>
+                </li>
+
+                <li class="catalog-item">
+                    <span class="catalog-item-counter">04</span>
+
+                    <div class="catalog-image --catalog-image-4"></div>
+
+                    <p class="catalog-item-count --text-subtitle">2345 товаров</p>
+
+                    <a href="#" class="catalog-item-link --text">Dell EMC</a>
+                </li>
+
+                <li class="catalog-item">
+                    <span class="catalog-item-counter">05</span>
+
+                    <div class="catalog-image --catalog-image-5"></div>
+
+                    <p class="catalog-item-count --text-subtitle">195 товаров</p>
+
+                    <a href="#" class="catalog-item-link --text">Запасные части к&nbsp;Dell EMC</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="benefits --bg-primary">
+    <div class="container">
+        <div class="benefits-content">
+            <div class="benefits-heading">
+                <div class="benefits-banner">
+                    <img src="../img/benefits-banner.png" alt="banner" />
+                </div>
+
+                <div class="benefits-text">
+                    <strong class="benefits-title --section-title">Наши преимущества</strong>
+
+                    <p class="benefits-description --text-subtitle">
+                        Оптимизация мощностей (расходов, социальных выплат и&nbsp;т.п.) позволили компании
+                        на&nbsp;4,7% понизить цены по&nbsp;сравнению с&nbsp;конкурентами
+                    </p>
+
+                    <div class="benefits-info hero-info">
+                        <a href="#" class="--arrow-btn"></a>
+                        <a href="#" class="hero-info-link --section-info-link">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="benefits-list">
+                <li class="benefits-item">
+                    <span class="benefits-item-icon">
+                        <svg
+                            width="37"
+                            height="37"
+                            viewBox="0 0 37 37"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M5.91241 23.8909L23.8917 5.91162"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M16.7024 27.5015L18.5078 25.696"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M20.7521 23.4539L24.348 19.858"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M5.41828 15.405L15.4085 5.4148C18.5981 2.22516 20.1929 2.21011 23.3525 5.36966L30.7398 12.757C33.8993 15.9165 33.8843 17.5113 30.6946 20.701L20.7045 30.6912C17.5148 33.8808 15.92 33.8958 12.7605 30.7363L5.37314 23.349C2.2136 20.1894 2.2136 18.6097 5.41828 15.405Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M3.00909 33.0978H33.1"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+
+                    <span class="benefits-item-title"><strong>Самые выгодные и&nbsp;низкие цены</strong></span>
+
+                    <p class="benefits-item-description">
+                        В&nbsp;наличии широкий ассортимент, а&nbsp;также доступные цены на&nbsp;ноутбуки Dell
+                    </p>
+                </li>
+
+                <li class="benefits-item">
+                    <span class="benefits-item-icon">
+                        <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12.5699 18.0001L16.1849 21.6302L23.4299 14.3701"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M16.1249 3.67498C17.1599 2.78998 18.8549 2.78998 19.9049 3.67498L22.2749 5.71499C22.7249 6.10499 23.5649 6.41999 24.1649 6.41999H26.7149C28.3049 6.41999 29.6099 7.72499 29.6099 9.31499V11.865C29.6099 12.45 29.9249 13.305 30.3149 13.755L32.3549 16.125C33.2399 17.16 33.2399 18.855 32.3549 19.905L30.3149 22.275C29.9249 22.725 29.6099 23.565 29.6099 24.165V26.715C29.6099 28.305 28.3049 29.61 26.7149 29.61H24.1649C23.5799 29.61 22.7249 29.925 22.2749 30.315L19.9049 32.355C18.8699 33.24 17.1749 33.24 16.1249 32.355L13.7549 30.315C13.3049 29.925 12.4649 29.61 11.8649 29.61H9.26994C7.67994 29.61 6.37494 28.305 6.37494 26.715V24.15C6.37494 23.565 6.05994 22.725 5.68494 22.275L3.65995 19.89C2.78995 18.855 2.78995 17.175 3.65995 16.14L5.68494 13.755C6.05994 13.305 6.37494 12.465 6.37494 11.88V9.29999C6.37494 7.70999 7.67994 6.40499 9.26994 6.40499H11.8649C12.4499 6.40499 13.3049 6.08999 13.7549 5.69999L16.1249 3.67498Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+
+                    <strong class="benefits-item-title">Авторизованный сервисный центр DELL</strong>
+
+                    <p class="benefits-item-description">
+                        Сертифицированный сервисный центр по&nbsp;ремонту техники Dell в&nbsp;России
+                        и&nbsp;странах СНГ
+                    </p>
+                </li>
+
+                <li class="benefits-item">
+                    <span class="benefits-item-icon">
+                        <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M27 10.74C26.91 10.725 26.805 10.725 26.715 10.74C24.645 10.665 22.995 8.97 22.995 6.87C22.995 4.725 24.72 3 26.865 3C29.01 3 30.735 4.74 30.735 6.87C30.72 8.97 29.07 10.665 27 10.74Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M25.455 21.66C27.51 22.005 29.775 21.645 31.365 20.58C33.48 19.17 33.48 16.86 31.365 15.45C29.76 14.385 27.465 14.025 25.41 14.385"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M8.955 10.74C9.045 10.725 9.15 10.725 9.24 10.74C11.31 10.665 12.96 8.97 12.96 6.87C12.96 4.725 11.235 3 9.09 3C6.945 3 5.22 4.74 5.22 6.87C5.235 8.97 6.885 10.665 8.955 10.74Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M10.5 21.66C8.445 22.005 6.18 21.645 4.59 20.58C2.475 19.17 2.475 16.86 4.59 15.45C6.195 14.385 8.49 14.025 10.545 14.385"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M18 21.945C17.91 21.93 17.805 21.93 17.715 21.945C15.645 21.87 13.995 20.175 13.995 18.075C13.995 15.93 15.72 14.205 17.865 14.205C20.01 14.205 21.735 15.945 21.735 18.075C21.72 20.175 20.07 21.885 18 21.945Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M13.635 26.6699C11.52 28.0799 11.52 30.3899 13.635 31.7999C16.035 33.4049 19.965 33.4049 22.365 31.7999C24.48 30.3899 24.48 28.0799 22.365 26.6699C19.98 25.0799 16.035 25.0799 13.635 26.6699Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+
+                    <strong class="benefits-item-title">Высокий уровень технической экспертизы</strong>
+
+                    <p class="benefits-item-description">
+                        Мы&nbsp;прошли аттестацию в&nbsp;виде тестирования, где показали высокий уровень
+                        знаний
+                    </p>
+                </li>
+
+                <li class="benefits-item">
+                    <span class="benefits-item-icon">
+                        <svg
+                            width="36"
+                            height="37"
+                            viewBox="0 0 36 37"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M19.38 3.41492L29.145 8.7187C30.285 9.33823 30.285 11.1062 29.145 11.7257L19.38 17.0295C18.51 17.4979 17.49 17.4979 16.62 17.0295L6.855 11.7257C5.715 11.1062 5.715 9.33823 6.855 8.7187L16.62 3.41492C17.49 2.94649 18.51 2.94649 19.38 3.41492Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M5.415 15.3069L14.49 19.8854C15.615 20.4596 16.335 21.6231 16.335 22.8924V31.5356C16.335 32.7898 15.03 33.5906 13.92 33.0316L4.845 28.4531C3.72 27.8789 3 26.7154 3 25.4461V16.8029C3 15.5487 4.305 14.7478 5.415 15.3069Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M30.585 15.3069L21.51 19.8854C20.385 20.4596 19.665 21.6231 19.665 22.8924V31.5356C19.665 32.7898 20.97 33.5906 22.08 33.0316L31.155 28.4531C32.28 27.8789 33 26.7154 33 25.4461V16.8029C33 15.5487 31.695 14.7478 30.585 15.3069Z"
+                                stroke="white"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+                    <span class="benefits-item-title"><strong>Официальный партнер DELL</strong></span>
+
+                    <p class="benefits-item-description">
+                        <strong>Официальный поставщик продукции DELL&nbsp;в России и&nbsp;странах СНГ</strong>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+ <section class="news">
+    <div class="container">
+        <div class="news-content">
+            <div class="news-heading">
+                <div class="news-heading-text">
+                    <strong class="news-heading-text-title --section-title"> Последние новости </strong>
+
+                    <p class="news-heading-text-description --text-subtitle">
+                        Вы&nbsp;можете посмотреть ещё больше интересных новостей и&nbsp;узнать
+                        о&nbsp;последних новинках, перейдя по&nbsp;кнопке
+                    </p>
+                </div>
+
+                <div class="news-heading-text-info hero-info">
+                    <a href="#" class="hero-info-link --section-info-link">Все новости</a>
+                    <button class="--arrow-btn"></button>
+                </div>
+            </div>
+
+            <ul class="news-list">
+                <li class="news-item">
+                    <div class="news-item-image">
+                        <img src="../img/news-image-1.png" alt="bg" />
+                    </div>
+
+                    <div class="news-item-bottom">
+                        <div class="news-item-info">
+                            <a href="#" class="news-item-info-title">GE&nbsp;использует технологии Dell</a>
+                            <p class="news-item-info-description">
+                                Вы можете посмотреть ещё больше интересных
+                            </p>
+                        </div>
+
+                        <a href="#" class="news-item-info-link">
+                            <img src="../img/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                    </div>
+
+                    <time class="news-item-date">11 <span>июля</span></time>
+                </li>
+
+                <li class="news-item">
+                    <div class="news-item-image">
+                        <img src="../img/news-image-2.png" alt="bg" />
+                    </div>
+
+                    <div class="news-item-bottom">
+                        <div class="news-item-info">
+                            <a href="#" class="news-item-info-title">GE&nbsp;использует технологии Dell</a>
+                            <p class="news-item-info-description">
+                                Вы можете посмотреть ещё больше интересных
+                            </p>
+                        </div>
+
+                        <a href="#" class="news-item-info-link">
+                            <img src="../img/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                    </div>
+
+                    <time class="news-item-date">11 <span>июля</span></time>
+                </li>
+
+                <li class="news-item">
+                    <div class="news-item-image">
+                        <img src="../img/news-image-3.png" alt="bg" />
+                    </div>
+
+                    <div class="news-item-bottom">
+                        <div class="news-item-info">
+                            <a href="#" class="news-item-info-title">GE&nbsp;использует технологии Dell</a>
+                            <p class="news-item-info-description">
+                                Вы можете посмотреть ещё больше интересных
+                            </p>
+                        </div>
+
+                        <a href="#" class="news-item-info-link">
+                            <img src="../img/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                    </div>
+
+                    <time class="news-item-date">11 <span>июля</span></time>
+                </li>
+
+                <li class="news-item">
+                    <div class="news-item-image">
+                        <img src="../img/news-image-4.png" alt="bg" />
+                    </div>
+
+                    <div class="news-item-bottom">
+                        <div class="news-item-info">
+                            <a href="#" class="news-item-info-title">GE&nbsp;использует технологии Dell</a>
+                            <p class="news-item-info-description">
+                                Вы можете посмотреть ещё больше интересных
+                            </p>
+                        </div>
+
+                        <a href="#" class="news-item-info-link">
+                            <img src="../img/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                    </div>
+
+                    <time class="news-item-date">11 <span>июля</span></time>
+                </li>
+
+                <li class="news-item">
+                    <div class="news-item-image">
+                        <img src="../img/news-image-5.png" alt="bg" />
+                    </div>
+
+                    <div class="news-item-bottom">
+                        <div class="news-item-info">
+                            <a href="#" class="news-item-info-title">GE&nbsp;использует технологии Dell</a>
+                            <p class="news-item-info-description">
+                                Вы можете посмотреть ещё больше интересных
+                            </p>
+                        </div>
+
+                        <a href="#" class="news-item-info-link">
+                            <img src="../img/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                    </div>
+
+                    <time class="news-item-date">11 <span>июля</span></time>
+                </li>
+
+                <li class="news-item">
+                    <div class="news-item-image">
+                        <img src="../img/news-image-6.png" alt="bg" />
+                    </div>
+
+                    <div class="news-item-bottom">
+                        <div class="news-item-info">
+                            <a href="#" class="news-item-info-title">GE&nbsp;использует технологии Dell</a>
+                            <p class="news-item-info-description">
+                                Вы можете посмотреть ещё больше интересных
+                            </p>
+                        </div>
+
+                        <a href="#" class="news-item-info-link">
+                            <img src="../img/arrow-right.svg" alt="arrow-right" />
+                        </a>
+                    </div>
+
+                    <time class="news-item-date">11 <span>июля</span></time>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="request">
+    <div class="container">
+        <div class="request-content">
+            <div class="request-left --bg-secondary">
+                <strong class="request-left-title --section-title"> Наши контакты </strong>
+
+                <p class="request-left-subtitle --text-subtitle">
+                    Dы&nbsp;можете связаться с&nbsp;нашим онлайн-консультантом
+                </p>
+
+                <ul class="request-left-list">
+                    <li class="request-left-item">
+                        <div class="request-left-item-icon">
+                            <svg
+                                width="38"
+                                height="38"
+                                viewBox="0 0 38 38"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M19 21.2641C21.7283 21.2641 23.94 19.0524 23.94 16.3241C23.94 13.5958 21.7283 11.3841 19 11.3841C16.2717 11.3841 14.06 13.5958 14.06 16.3241C14.06 19.0524 16.2717 21.2641 19 21.2641Z"
+                                    stroke="#48A4EB"
+                                    stroke-width="3"
+                                />
+                                <path
+                                    d="M5.73165 13.4425C8.85082 -0.269142 29.165 -0.253309 32.2683 13.4584C34.0892 21.5017 29.0858 28.31 24.7 32.5217C21.5175 35.5934 16.4825 35.5934 13.2842 32.5217C8.91415 28.31 3.91082 21.4859 5.73165 13.4425Z"
+                                    stroke="#48A4EB"
+                                    stroke-width="3"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="request-left-item-text">
+                            <span>Адрес</span>
+
+                            <address>Москва, ул. 3-я Хорошевская, дом&nbsp;2, строение&nbsp;1</address>
+                        </div>
+                    </li>
+
+                    <li class="request-left-item">
+                        <div class="request-left-item-icon">
+                            <svg
+                                width="36"
+                                height="36"
+                                viewBox="0 0 36 36"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M25.5 30.75H10.5C6 30.75 3 28.5 3 23.25V12.75C3 7.5 6 5.25 10.5 5.25H25.5C30 5.25 33 7.5 33 12.75V23.25C33 28.5 30 30.75 25.5 30.75Z"
+                                    stroke="#48A4EB"
+                                    stroke-width="3"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M25.5 13.5L20.805 17.25C19.26 18.48 16.725 18.48 15.18 17.25L10.5 13.5"
+                                    stroke="#48A4EB"
+                                    stroke-width="3"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="request-left-item-text">
+                            <span>E-mail</span>
+
+                            <a href="mailto:dell_ru@gmail.com">dell_ru@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="request-left-item">
+                        <div class="request-left-item-icon">
+                            <svg
+                                width="36"
+                                height="36"
+                                viewBox="0 0 36 36"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M32.955 27.495C32.955 28.035 32.835 28.59 32.58 29.13C32.325 29.67 31.995 30.18 31.56 30.66C30.825 31.47 30.015 32.055 29.1 32.43C28.2 32.805 27.225 33 26.175 33C24.645 33 23.01 32.64 21.285 31.905C19.56 31.17 17.835 30.18 16.125 28.935C14.4 27.675 12.765 26.28 11.205 24.735C9.66 23.175 8.265 21.54 7.02 19.83C5.79 18.12 4.8 16.41 4.08 14.715C3.36 13.005 3 11.37 3 9.81C3 8.79 3.18 7.815 3.54 6.915C3.9 6 4.47 5.16 5.265 4.41C6.225 3.465 7.275 3 8.385 3C8.805 3 9.225 3.09 9.6 3.27C9.99 3.45 10.335 3.72 10.605 4.11L14.085 9.015C14.355 9.39 14.55 9.735 14.685 10.065C14.82 10.38 14.895 10.695 14.895 10.98C14.895 11.34 14.79 11.7 14.58 12.045C14.385 12.39 14.1 12.75 13.74 13.11L12.6 14.295C12.435 14.46 12.36 14.655 12.36 14.895C12.36 15.015 12.375 15.12 12.405 15.24C12.45 15.36 12.495 15.45 12.525 15.54C12.795 16.035 13.26 16.68 13.92 17.46C14.595 18.24 15.315 19.035 16.095 19.83C16.905 20.625 17.685 21.36 18.48 22.035C19.26 22.695 19.905 23.145 20.415 23.415C20.49 23.445 20.58 23.49 20.685 23.535C20.805 23.58 20.925 23.595 21.06 23.595C21.315 23.595 21.51 23.505 21.675 23.34L22.815 22.215C23.19 21.84 23.55 21.555 23.895 21.375C24.24 21.165 24.585 21.06 24.96 21.06C25.245 21.06 25.545 21.12 25.875 21.255C26.205 21.39 26.55 21.585 26.925 21.84L31.89 25.365C32.28 25.635 32.55 25.95 32.715 26.325C32.865 26.7 32.955 27.075 32.955 27.495Z"
+                                    stroke="#48A4EB"
+                                    stroke-width="3"
+                                    stroke-miterlimit="10"
+                                />
+                                <path
+                                    d="M27.75 13.5C27.75 12.6 27.045 11.22 25.995 10.095C25.035 9.06 23.76 8.25 22.5 8.25"
+                                    stroke="#48A4EB"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M33 13.5C33 7.695 28.305 3 22.5 3"
+                                    stroke="#48A4EB"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="request-left-item-text">
+                            <span>Телефон</span>
+
+                            <a href="tel:74957370601">+7 495 737-06-01</a>
+                            <a href="tel:74957370601">+7 495 737-06-01</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="request-left-social-list">
+                    <li class="request-left-social-item">
+                        <a href="#">
+                            <svg
+                                width="38"
+                                height="38"
+                                viewBox="0 0 38 38"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="18.856"
+                                    cy="18.856"
+                                    r="17.356"
+                                    stroke="#292D32"
+                                    stroke-width="3"
+                                />
+                                <path
+                                    d="M22.9521 19.9545L23.4407 16.5678H20.3841V14.3709C20.3841 13.4444 20.8112 12.5403 22.1802 12.5403H23.5699V9.65694C23.5699 9.65694 22.3087 9.4281 21.1029 9.4281C18.5855 9.4281 16.9401 11.0501 16.9401 13.9865V16.5678H14.1418V19.9545H16.9401V28.1418C18.0812 28.3316 19.2431 28.3316 20.3841 28.1418V19.9545H22.9521Z"
+                                    fill="#292D32"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <svg
+                                width="38"
+                                height="38"
+                                viewBox="0 0 38 38"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9.36724 33.3911L8.76998 33.0004L8.09002 33.2173C7.67666 33.3492 7.12251 33.5214 6.49304 33.717C5.6119 33.9907 4.58316 34.3103 3.5864 34.6295C3.69996 34.2695 3.81574 33.9016 3.92998 33.5356C4.36589 32.139 4.8171 30.656 4.93122 29.9866L5.03554 29.3748L4.67707 28.8681C2.67573 26.0395 1.5 22.5873 1.5 18.856C1.5 9.27056 9.27056 1.5 18.856 1.5C28.4415 1.5 36.212 9.27056 36.212 18.856C36.212 28.4415 28.4415 36.212 18.856 36.212C15.3514 36.212 12.0936 35.1749 9.36724 33.3911Z"
+                                    stroke="#292D32"
+                                    stroke-width="3"
+                                />
+                                <path
+                                    d="M28.2839 24.824C28.2839 25.1635 28.2083 25.5123 28.0478 25.8517C27.8873 26.1911 27.6796 26.5117 27.4058 26.8134C26.9431 27.3225 26.4332 27.6902 25.8572 27.9259C25.2907 28.1616 24.677 28.2841 24.016 28.2841C23.0529 28.2841 22.0237 28.0579 20.9379 27.5959C19.852 27.1339 18.7662 26.5117 17.6898 25.7291C16.6039 24.9372 15.5747 24.0604 14.5927 23.0893C13.6202 22.1088 12.7421 21.0811 11.9584 20.0063C11.1841 18.9315 10.5609 17.8567 10.1077 16.7914C9.65447 15.7166 9.42786 14.6889 9.42786 13.7084C9.42786 13.0673 9.54116 12.4545 9.76777 11.8888C9.99439 11.3137 10.3532 10.7857 10.8536 10.3143C11.4579 9.72037 12.1189 9.4281 12.8176 9.4281C13.082 9.4281 13.3464 9.48467 13.5824 9.5978C13.8279 9.71094 14.0451 9.88065 14.215 10.1258L16.4056 13.2087C16.5756 13.4444 16.6983 13.6613 16.7833 13.8687C16.8683 14.0667 16.9155 14.2647 16.9155 14.4438C16.9155 14.6701 16.8494 14.8963 16.7172 15.1132C16.5945 15.33 16.4151 15.5563 16.1885 15.7826L15.4708 16.5274C15.367 16.6311 15.3198 16.7537 15.3198 16.9045C15.3198 16.9799 15.3292 17.0459 15.3481 17.1214C15.3764 17.1968 15.4048 17.2534 15.4236 17.3099C15.5936 17.621 15.8863 18.0264 16.3018 18.5167C16.7267 19.007 17.1799 19.5066 17.6709 20.0063C18.1808 20.506 18.6717 20.968 19.1722 21.3922C19.6632 21.8071 20.0692 22.0899 20.3902 22.2596C20.4374 22.2785 20.4941 22.3068 20.5602 22.335C20.6357 22.3633 20.7113 22.3728 20.7962 22.3728C20.9568 22.3728 21.0795 22.3162 21.1834 22.2125L21.901 21.5054C22.137 21.2697 22.3636 21.0906 22.5808 20.9774C22.798 20.8454 23.0151 20.7794 23.2512 20.7794C23.4306 20.7794 23.6194 20.8171 23.8272 20.902C24.0349 20.9868 24.2521 21.1094 24.4881 21.2697L27.6135 23.4853C27.859 23.655 28.0289 23.853 28.1328 24.0887C28.2272 24.3244 28.2839 24.5601 28.2839 24.824Z"
+                                    fill="#292D32"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="request-right">
+                <strong class="request-right-title --section-title"> Оставьте заявку </strong>
+
+                <p class="request-right-subtitle --text-subtitle">
+                    Оставьте свой номер, и мы перезвоним Вам.
+                </p>
+
+                <form action="#" class="request-right-form">
+                    <div class="request-right-form-item">
+                        <label for="name">Ваше имя</label>
+                        <input id="name" type="text" />
+                    </div>
+
+                    <div class="request-right-form-item">
+                        <label for="phone">Номер телефона</label>
+                        <input id="phone" type="text" />
+                    </div>
+
+                    <div class="request-right-form-item">
+                        <label for="comment">Комментарий</label>
+                        <textarea id="comment"></textarea>
+                    </div>
+
+                    <div class="request-right-form-info">
+                        <button class="--arrow-btn"></button>
+                        <button type="submit" class="hero-info-link">Заказать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-top">
+                <a href="#" class="footer-logo">
+                    <img src="../img/logo.svg" alt="logo" />
+                </a>
+
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <span class="footer-item-title">Каталог</span>
+
+                        <ul class="footer-item-catalog-list">
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Ноутбуки</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Персональные компьютеры</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Серверы</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Dell EMC</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#"> Запасные части к Dell EMC </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-item">
+                        <span class="footer-item-title">Личный кабинет</span>
+
+                        <ul class="footer-item-catalog-list">
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Профиль</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">История заказов</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">SMS-уведомления</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Избранное</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Сравнение товаров</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-item">
+                        <span class="footer-item-title">Помощь</span>
+
+                        <ul class="footer-item-catalog-list">
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="footer-item-catalog-item">
+                                <a href="#">Наш АСЦ</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <ul class="footer-bottom-list">
+                    <li class="footer-bottom-item">
+                        <span class="footer-bottom-item-title">Адрес</span>
+
+                        <address>Москва, ул. 3-я Хорошевская, дом 2, строение 1</address>
+                    </li>
+
+                    <li class="footer-bottom-item">
+                        <span class="footer-bottom-item-title">Телефон</span>
+
+                        <div class="phones">
+                            <a href="tel:74957370601">+7 495 737-06-01</a>
+                            <strong>,</strong>
+                            <a href="tel:74957370601">+7 495 737-06-01</a>
+                        </div>
+                    </li>
+
+                    <li class="footer-bottom-item">
+                        <span class="footer-bottom-item-title">E-mail</span>
+
+                        <a href="mailto:dell_ru@gmail.com">dell_ru@gmail.com</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-bottom-social">
+                    <li class="footer-bottom-social-item">
+                        <a href="#">
+                            <svg
+                                width="38"
+                                height="38"
+                                viewBox="0 0 38 38"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="18.856"
+                                    cy="18.856"
+                                    r="17.356"
+                                    stroke="#292D32"
+                                    stroke-width="3"
+                                />
+                                <path
+                                    d="M22.9521 19.9545L23.4407 16.5678H20.3841V14.3709C20.3841 13.4444 20.8112 12.5403 22.1802 12.5403H23.5699V9.65694C23.5699 9.65694 22.3087 9.4281 21.1029 9.4281C18.5855 9.4281 16.9401 11.0501 16.9401 13.9865V16.5678H14.1418V19.9545H16.9401V28.1418C18.0812 28.3316 19.2431 28.3316 20.3841 28.1418V19.9545H22.9521Z"
+                                    fill="#292D32"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer-bottom-social-item">
+                        <a href="#">
+                            <svg
+                                width="38"
+                                height="38"
+                                viewBox="0 0 38 38"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9.36724 33.3911L8.76998 33.0004L8.09002 33.2173C7.67666 33.3492 7.12251 33.5214 6.49304 33.717C5.6119 33.9907 4.58316 34.3103 3.5864 34.6295C3.69996 34.2695 3.81574 33.9016 3.92998 33.5356C4.36589 32.139 4.8171 30.656 4.93122 29.9866L5.03554 29.3748L4.67707 28.8681C2.67573 26.0395 1.5 22.5873 1.5 18.856C1.5 9.27056 9.27056 1.5 18.856 1.5C28.4415 1.5 36.212 9.27056 36.212 18.856C36.212 28.4415 28.4415 36.212 18.856 36.212C15.3514 36.212 12.0936 35.1749 9.36724 33.3911Z"
+                                    stroke="#292D32"
+                                    stroke-width="3"
+                                />
+                                <path
+                                    d="M28.2839 24.824C28.2839 25.1635 28.2083 25.5123 28.0478 25.8517C27.8873 26.1911 27.6796 26.5117 27.4058 26.8134C26.9431 27.3225 26.4332 27.6902 25.8572 27.9259C25.2907 28.1616 24.677 28.2841 24.016 28.2841C23.0529 28.2841 22.0237 28.0579 20.9379 27.5959C19.852 27.1339 18.7662 26.5117 17.6898 25.7291C16.6039 24.9372 15.5747 24.0604 14.5927 23.0893C13.6202 22.1088 12.7421 21.0811 11.9584 20.0063C11.1841 18.9315 10.5609 17.8567 10.1077 16.7914C9.65447 15.7166 9.42786 14.6889 9.42786 13.7084C9.42786 13.0673 9.54116 12.4545 9.76777 11.8888C9.99439 11.3137 10.3532 10.7857 10.8536 10.3143C11.4579 9.72037 12.1189 9.4281 12.8176 9.4281C13.082 9.4281 13.3464 9.48467 13.5824 9.5978C13.8279 9.71094 14.0451 9.88065 14.215 10.1258L16.4056 13.2087C16.5756 13.4444 16.6983 13.6613 16.7833 13.8687C16.8683 14.0667 16.9155 14.2647 16.9155 14.4438C16.9155 14.6701 16.8494 14.8963 16.7172 15.1132C16.5945 15.33 16.4151 15.5563 16.1885 15.7826L15.4708 16.5274C15.367 16.6311 15.3198 16.7537 15.3198 16.9045C15.3198 16.9799 15.3292 17.0459 15.3481 17.1214C15.3764 17.1968 15.4048 17.2534 15.4236 17.3099C15.5936 17.621 15.8863 18.0264 16.3018 18.5167C16.7267 19.007 17.1799 19.5066 17.6709 20.0063C18.1808 20.506 18.6717 20.968 19.1722 21.3922C19.6632 21.8071 20.0692 22.0899 20.3902 22.2596C20.4374 22.2785 20.4941 22.3068 20.5602 22.335C20.6357 22.3633 20.7113 22.3728 20.7962 22.3728C20.9568 22.3728 21.0795 22.3162 21.1834 22.2125L21.901 21.5054C22.137 21.2697 22.3636 21.0906 22.5808 20.9774C22.798 20.8454 23.0151 20.7794 23.2512 20.7794C23.4306 20.7794 23.6194 20.8171 23.8272 20.902C24.0349 20.9868 24.2521 21.1094 24.4881 21.2697L27.6135 23.4853C27.859 23.655 28.0289 23.853 28.1328 24.0887C28.2272 24.3244 28.2839 24.5601 28.2839 24.824Z"
+                                    fill="#292D32"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/scripts.min.js" type="module"></script>
+</html>
