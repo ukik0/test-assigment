@@ -371,15 +371,22 @@
     }
 }
 
-:root {
-    --products-width: 405px;
-    --products-height: 374px;
-    --developers-width: 390px;
-    --developers-height: 326px;
-    --company-width: 375px;
-    --company-height: 325px;
+//burger-overlay
+.overlay {
+    opacity: 0;
+    transition: $transition-all;
+
+    &.active {
+        position: fixed;
+        z-index: $burger-z-index;
+        inset: 0;
+        background: $bg-alpha;
+        top: calc($header-height + 10px);
+        opacity: 1;
+    }
 }
 
+//nav-dropdown
 .popover {
     position: absolute;
     left: 0;
@@ -432,16 +439,16 @@
 }
 
 .section-products {
-    width: var(--products-width);
-    height: var(--products-height);
+    width: 405px;
+    height: 375px;
 }
 
 .section-developers {
-    width: var(--developers-width);
-    height: var(--developers-height);
+    width: 390px;
+    height: 326px;
 }
 
 .section-company {
-    width: var(--company-width);
-    height: var(--company-height);
+    width: 375px;
+    height: 325px;
 }

@@ -1,10 +1,8 @@
-// Global SCSS-files imports
 @import './vars';
 @import './reset';
 @import './global';
 @import './fonts';
 
-// Sections or Pages SCSS-files imports
 @import 'components/header';
 @import 'components/footer';
 @import 'components/hero';
@@ -12,6 +10,3 @@
 @import 'components/benefits';
 @import 'components/news';
 @import 'components/request';
-
-// Libs
-// @import './libs/swiper';

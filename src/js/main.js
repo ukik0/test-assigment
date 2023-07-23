@@ -42,9 +42,11 @@ const burger = () => {
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.menu');
     const body = document.querySelector('body');
+    const overlay = document.querySelector('.overlay');
 
     burger.addEventListener('click', () => {
         menu.classList.toggle('active');
+        overlay.classList.toggle('active');
         burger.classList.toggle('active-burger');
         body.classList.toggle('locked');
     });
@@ -54,6 +56,7 @@ const burger = () => {
     window.addEventListener('resize', () => {
         if (window.innerWidth > BURGER_BREAKPOINT) {
             menu.classList.remove('active');
+            overlay.classList.remove('active');
             burger.classList.remove('active-burger');
             body.classList.remove('locked');
         }
