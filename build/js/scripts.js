@@ -147,6 +147,8 @@ changeMonthName();
 const handleSubmitForm = () => {
     const submitButton = document.querySelector('.request-right-form-info-btn');
 
+    submitButton.setAttribute('disabled', 'true');
+
     const nameInput = document.getElementById('name');
     const phoneInput = document.getElementById('phone');
     const commentInput = document.getElementById('comment');
