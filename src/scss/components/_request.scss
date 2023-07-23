@@ -33,7 +33,7 @@
             left: 7px;
         }
 
-        @include tablet {
+        @include desktop {
             display: none;
         }
     }
@@ -88,11 +88,15 @@
 
         @include desktop {
             padding: 75px;
+            min-height: 900px;
+            max-height: 900px;
         }
 
         @include tablet {
             width: 100%;
             flex: 1 1 100%;
+            min-height: initial;
+            max-height: initial;
         }
 
         @include small-tablet {
@@ -201,6 +205,11 @@
                     font-weight: 400;
                     line-height: 150%;
                     font-style: normal;
+                    transition: $transition-color;
+
+                    &:hover {
+                        color: $bg-dodger;
+                    }
 
                     @include mobile {
                         font-size: 18px;
@@ -219,7 +228,17 @@
             }
 
             li {
+                a {
+                    &:hover {
+                        svg {
+                            fill: $bg-picton;
+                        }
+                    }
+                }
+
                 svg {
+                    transition: $transition-all;
+
                     @include mobile {
                         width: 26px;
                         height: 26px;
@@ -238,6 +257,8 @@
         @include desktop {
             padding: 75px;
             padding-bottom: 103px;
+            min-height: 900px;
+            max-height: 900px;
         }
 
         @include tablet {
@@ -246,6 +267,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: initial;
+            max-height: initial;
         }
 
         @include small-tablet {
@@ -291,6 +314,11 @@
                 max-width: 100%;
             }
 
+            @include mobile {
+                gap: 40px;
+                margin-top: 7px;
+            }
+
             &-item {
                 position: relative;
                 width: 100%;
@@ -304,7 +332,25 @@
                     font-weight: 300;
                     line-height: 133.687%;
                     padding: 0 12px;
-                    background: $text-primary-color;
+                    z-index: 5;
+
+                    &::after {
+                        @include pseudo {
+                            width: 100%;
+                            height: 50%;
+                            top: 55%;
+                            left: 0;
+                            background: $text-primary-color;
+                            transform: translateY(-50%);
+                            z-index: -1;
+                        }
+                    }
+
+                    @include mobile {
+                        font-size: 15px;
+                        left: 14px;
+                        top: -9px;
+                    }
                 }
 
                 input,
@@ -323,9 +369,18 @@
                     transition: 0.1s all ease-in-out;
                     z-index: 2;
 
+                    @include mobile {
+                        height: 42px;
+                        border-radius: 12px;
+                    }
+
                     &:hover,
-                    :focus {
+                    &:focus {
                         border: 2px solid $bg-dodger;
+                    }
+
+                    &::-webkit-scrollbar {
+                        display: none;
                     }
                 }
 
@@ -333,6 +388,10 @@
                     resize: none;
                     height: 145px;
                     padding-top: 10px;
+
+                    @include mobile {
+                        height: 80px;
+                    }
                 }
             }
 
@@ -340,6 +399,11 @@
                 display: flex;
                 align-items: center;
                 gap: 12px;
+
+                @include mobile {
+                    margin-top: -15px;
+                    gap: 15px;
+                }
 
                 button[type='submit'] {
                     @extend .hero-info-link !optional;

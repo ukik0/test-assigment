@@ -23,9 +23,9 @@ $text-white-color: #fff;
 $text-black-color: #000;
 $text-primary-color: #292d32;
 $text-gray-color: #838383;
-$text-outer-color: #343A41;
-$text-outer-color: #343A41;
-$text-nobel-color: #B7B7B7;
+$text-outer-color: #343a41;
+$text-outer-color: #343a41;
+$text-nobel-color: #b7b7b7;
 
 // background
 $bg-primary: #f2f2f2;
@@ -34,9 +34,11 @@ $bg-picton: #48a4eb;
 $bg-dodger: #33a9ff;
 $bg-alpha: rgba(63, 63, 63, 0.5);
 $bg-bullet: #d0d0d0;
+$bg-mercury: #e5e5e5;
 
 // border
 $border-primary: 1px solid $bg-primary;
+$border-mercury: 1px solid $bg-mercury;
 
 // transition
 $transition-color: 0.3s color ease;
