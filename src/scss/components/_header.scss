@@ -373,7 +373,6 @@
 
 //burger overlay
 .overlay {
-    opacity: 0;
     transition: $transition-all;
 
     &.active {
@@ -382,7 +381,6 @@
         inset: 0;
         background: $bg-alpha;
         top: calc($header-height + 10px);
-        opacity: 1;
     }
 }
 

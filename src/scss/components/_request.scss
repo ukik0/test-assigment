@@ -323,6 +323,18 @@
                 position: relative;
                 width: 100%;
 
+                .error {
+                    display: block;
+                    margin-top: 10px;
+                    color: red;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 133.687%;
+                    position: absolute;
+                    bottom: -25px;
+                    left: 0;
+                }
+
                 label {
                     position: absolute;
                     left: 12px;
@@ -416,6 +428,11 @@
 
                     &:hover {
                         color: $bg-dodger;
+                    }
+
+                    &:disabled{
+                        cursor: not-allowed;
+                        opacity: .5;
                     }
                 }
             }

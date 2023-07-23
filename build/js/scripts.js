@@ -1,3 +1,4 @@
+// Custom Scripts
 const swiper = new Swiper('.swiper', {
     speed: 400,
 
@@ -229,3 +230,4 @@ const handleSubmitForm = () => {
 };
 
 handleSubmitForm();
+;
